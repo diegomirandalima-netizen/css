@@ -1,0 +1,237 @@
+<!-- Estrutura Semantica (Organizacao do Layout)-->
+ <header>                              <!-- Define o cabecalho do site (geralmente contem a logo e o menu) -->
+    <nav>                             <!-- Agrupa os links de navegacao principal do site (menus) -->
+        <a href="">Link</a>           <!-- Cria um hiperlink para outra pagina ou secao -->
+    </nav>                            <!-- Fechamento da navegacao -->
+</header>                             <!-- Fechamento do cabecalho -->
+
+<main>                                <!-- Envolve o conteudo principal e exclusivo daquela pagina especifica -->
+    <section>                         <!-- Divide a pagina em secoes tematicas genericas -->
+        <article>                     <!-- Define um conteudo autonomo e completo (como um post de blog ou noticia) -->
+        </article>                    <!-- Fechamento do artigo -->
+    </section>                        <!-- Fechamento da secao -->
+
+    <aside>                           <!-- Define uma barra lateral com conteudos secundarios ou anuncios -->
+    </aside>                          <!-- Fechamento da barra lateral -->
+</main>                               <!-- Fechamento do conteudo principal -->
+
+<footer>                              <!-- Define o rodape da pagina (direitos autorais, links secundarios) -->
+</footer>                             <!-- Fechamento do rodape -->
+
+<div>                                 <!-- Cria um bloco generico sem significado semantico (usado para aplicar CSS) -->
+</div>                                <!-- Fechamento do bloco generico -->
+
+
+<!--Textos e Titulos-->
+<h1>Titulo Principal</h1>             <!-- Define o titulo mais importante da pagina (usar apenas um por pagina) -->
+<h2>Subtitulo Importante</h2>         <!-- Define titulos de secoes secundarias -->
+<h3>Titulo de Terceiro Nivel</h3>     <!-- Define titulos dentro de subsecoes (vai do h1 ate o h6) -->
+<p>Este e um paragrafo.</p>           <!-- Cria um bloco de texto comum -->
+<span>Texto isolado</span>            <!-- Agrupa pequenos trechos de texto em linha para estilizacao CSS -->
+<strong>Texto em negrito</strong>     <!-- Deixa o texto em negrito e indica forte importancia para os buscadores -->
+<em>Texto em italico</em>             <!-- Deixa o texto em italico e aplica enfase na leitura -->
+<br>                                  <!-- Forca uma quebra de linha no texto (nao precisa de fechamento) -->
+<hr>                                  <!-- Cria uma linha horizontal divisoria na tela (nao precisa de fechamento) -->
+
+
+<!--Midia e Imagens-->
+<img src="foto.jpg" alt="Descricao">  <!-- Insere uma imagem na tela (src e o caminho e alt e a descricao acessivel) -->
+<audio src="som.mp3" controls></audio><!-- Insere um player de audio com controles visuais (play, pause, volume) -->
+<video src="video.mp4" controls></video><!-- Insere um player de video com controles de reproducao na tela -->
+<picture>                             <!-- Permite carregar imagens diferentes dependendo do tamanho da tela do usuario -->
+    <source media="(max-width: 600px)" srcset="celular.jpg"> <!-- Imagem menor para celulares -->
+    <img src="computador.jpg" alt=""> <!-- Imagem padrao para computadores -->
+</picture>                            <!-- Fechamento do bloco de imagem responsiva -->
+
+
+
+<!--Listas e Tabelas-->
+<ul>                                  <!-- Cria uma lista demarcada por pontos/bolinhas (nao ordenada) -->
+    <li>Item da lista</li>            <!-- Define cada um dos elementos de uma lista (usado dentro de ul ou ol) -->
+</ul>                                 <!-- Fechamento da lista nao ordenada -->
+
+<ol>                                  <!-- Cria uma lista numerada sequencialmente (ordenada) -->
+    <li>Primeiro passo</li>           <!-- Item numerado automaticamente como 1 -->
+</ol>                                 <!-- Fechamento da lista ordenada -->
+
+<table>                               <!-- Cria uma tabela para exibicao de dados estruturados -->
+    <thead>                           <!-- Agrupa a linha de cabecalho da tabela -->
+        <tr>                          <!-- Cria uma linha dentro da tabela (table row) -->
+            <th>Nome</th>             <!-- Cria uma celula de titulo/cabecalho em negrito (table header) -->
+        </tr>                         <!-- Fechamento da linha de cabecalho -->
+    </thead>                          <!-- Fechamento do topo da tabela -->
+    <tbody>                           <!-- Agrupa o corpo com os dados reais da tabela -->
+        <tr>                          <!-- Cria uma linha de dados -->
+            <td>Joao</td>             <!-- Cria uma celula comum de dado na tabela (table data) -->
+        </tr>                         <!-- Fechamento da linha de dados -->
+    </tbody>                          <!-- Fechamento do corpo da tabela -->
+</table>                              <!-- Fechamento da tabela -->
+
+
+
+<!-- Formularios e Entradas de Dados-->
+ <form action="" method="POST">        <!-- Cria a estrutura que agrupa e envia dados de formularios -->
+    <label for="nome">Nome:</label>   <!-- Cria um rotulo de texto vinculado a um campo de entrada -->
+    <input type="text" id="nome">     <!-- Cria um campo de texto simples para digitacao livre -->
+    <input type="email">              <!-- Cria um campo validado automaticamente para enderecos de e-mail -->
+    <input type="password">           <!-- Cria um campo que esconde os caracteres digitados (senha) -->
+    <input type="checkbox">           <!-- Cria uma caixa de selecao quadrada (permite marcar varias opcoes) -->
+    <input type="radio" name="opcao"> <!-- Cria um botao circular de selecao unica dentro de um mesmo grupo -->
+    <input type="file">               <!-- Cria um botao para o usuario fazer upload de arquivos do dispositivo -->
+    <input type="submit" value="Ok">  <!-- Cria um botao especial que envia os dados do formulario -->
+    
+    <textarea></textarea>             <!-- Cria uma caixa de texto grande com varias linhas para comentarios -->
+    
+    <select>                          <!-- Cria uma lista de selecao suspensa (dropdown) -->
+        <option>Opcao 1</option>      <!-- Define uma das escolhas disponiveis dentro do select -->
+    </select>                         <!-- Fechamento da lista suspensa -->
+    
+    <button type="button">Clique</button> <!-- Cria um botao generico altamente customizavel com CSS e JavaScript -->
+</form>                               <!-- Fechamento do formulario -->
+
+
+
+<!--Metadados Avancados e SEO (Dentro da tag <head>)-->
+<link rel="icon" href="favicon.ico">  <!-- Define o icone minusculo que aparece na aba do navegador -->
+<meta name="description" content="">  <!-- Define a descricao do site que aparece nos resultados do Google -->
+<meta name="keywords" content="">     <!-- Lista palavras-chave sobre o assunto do site (relevancia historica) -->
+<meta name="author" content="Nome">   <!-- Identifica quem foi o criador ou desenvolvedor da pagina -->
+<meta property="og:title" content=""> <!-- Define o titulo que vai aparecer quando o link for compartilhado no WhatsApp/redes -->
+<meta property="og:image" content=""> <!-- Define a foto de miniatura que aparece ao compartilhar o link do site -->
+
+
+
+<!-- Acessibilidade e Semantica de Texto Avancada-->
+ <main>                                <!-- Envolve o conteudo principal e exclusivo daquela pagina especifica -->
+    <time datetime="2026-09-25">25/09</time> <!-- Avisa robos e leitores de tela sobre uma data ou hora especifica -->
+    <address>                         <!-- Identifica informacoes de contato fisicas ou digitais do autor/empresa -->
+        <a href="mailto:ex@email.com">Email</a> <!-- Cria um link que abre o aplicativo de e-mail do usuario automaticamente -->
+    </address>                        <!-- Fechamento das informacoes de contato -->
+    <abbr title="HyperText">HTML</abbr><!-- Define uma abreviacao (mostra o texto do "title" ao passar o mouse) -->
+    <code>codigo_aqui</code>          <!-- Formata um trecho de texto no estilo de codigo de programacao -->
+    <pre>                             <!-- Mantem os espacos e quebras de linha exatamente como digitados no editor -->
+        Linha 1
+        Linha 2
+    </pre>                            <!-- Fechamento do bloco de texto pre-formatado -->
+</main>
+
+
+<!-- Incorporacao e Elementos Externos (Embeds)-->
+ <iframe>布局</iframe>                  <!-- Incorpora uma pagina web externa inteira (como um mapa do Google ou video do YouTube) -->
+<canvas></canvas>                     <!-- Cria uma area em branco usada pelo JavaScript para desenhar graficos ou jogos -->
+<svg>                                 <!-- Cria um conteiner para desenhar graficos vetoriais diretamente no codigo -->
+    <circle cx="50" cy="50" r="40" /> <!-- Desenha um circulo perfeito dentro do elemento SVG -->
+</svg>                                <!-- Fechamento do grafico vetorial -->
+
+
+<!--Elementos Interativos Nativos do HTML5-->
+<details>                             <!-- Cria um menu retratil que o usuario pode clicar para abrir ou fechar -->
+    <summary>Clique para ler</summary><!-- Define o titulo visivel que o usuario clica no menu retratil -->
+    <p>Texto que estava escondido.</p><!-- Conteudo oculto que so aparece apos o clique no summary -->
+</details>                            <!-- Fechamento do menu retratil -->
+
+<dialog id="meuModal">                <!-- Cria uma janela pop-up (modal) nativa da pagina -->
+    <p>Isso e uma janela de alerta!</p><!-- Texto de aviso de dentro do pop-up -->
+    <button onclick="meuModal.close()">Fechar</button> <!-- Botao para fechar a janela usando JavaScript nativo -->
+</dialog>                             <!-- Fechamento da janela pop-up -->
+
+<progress value="70" max="100"></progress> <!-- Cria uma barra de progresso visual (mostra 70% preenchido) -->
+<meter value="2" min="0" max="10"></meter> <!-- Cria um medidor grafico para valores dentro de um intervalo conhecido -->
+
+
+
+<!--Organizacao de Formularios (Avancado)-->
+<fieldset>                            <!-- Agrupa visualmente varios campos de um formulario com uma borda ao redor -->
+    <legend>Dados Pessoais</legend>   <!-- Define o titulo que fica embutido na borda do grupo do fieldset -->
+    <input type="text" placeholder=""> <!-- Campo de texto limpo para digitacao livre -->
+</fieldset>                           <!-- Fechamento do agrupador de campos -->
+
+<datalist id="navegadores">           <!-- Cria uma lista de sugestoes de preenchimento para um input -->
+    <option value="Chrome">           <!-- Opcao de autocompletar sugerida para o usuario -->
+    <option value="Firefox">          <!-- Outra opcao de autocompletar -->
+</datalist>                           <!-- Fechamento da lista de sugestoes -->
+<input list="navegadores">            <!-- Vincula o campo de entrada de texto a lista de opcoes acima -->
+
+
+<!--Performance e Seguranca (Dentro da tag <head>)-->
+  <script src="app.js" defer></script>  <!-- Carrega o JavaScript em segundo plano e so executa apos o HTML abrir -->
+<script src="app.js" async></script>  <!-- Carrega e executa o JavaScript imediatamente, pausando o desenho do HTML -->
+<link rel="preload" href="fnt.woff2"> <!-- Forca o navegador a baixar um recurso critico (como uma fonte) com prioridade -->
+<link rel="dns-prefetch" href="url"> <!-- Resolve o endereco de um link externo antes que o usuario clique nele -->
+<noscript>Ative o JavaScript!</noscript> <!-- Mostra uma mensagem de aviso caso o usuario tenha desativado o JavaScript -->
+
+
+
+<!--Marcacao Semantica Avancada de Texto-->
+<blockquote datetime="">Texto</blockquote> <!-- Define uma citacao longa retirada de outra fonte/site -->
+<cite>Nome da Obra</cite>             <!-- Define o titulo de um trabalho, livro, musica ou artigo citado -->
+<q>Citacao curta</q>                  <!-- Define uma citacao curta em linha (o navegador adiciona as aspas sozinho) -->
+<dfn>Termo</dfn>                      <!-- Identifica a palavra que esta sendo definida em uma frase ou glossario -->
+<kbd>Ctrl + C</kbd>                   <!-- Representa uma entrada do teclado ou comando que o usuario deve digitar -->
+<samp>Erro 404</samp>                 <!-- Identifica uma saida de texto gerada por um programa de computador -->
+<var>x</var>                          <!-- Define uma variavel em uma expressao matematica ou de programacao -->
+
+
+<!-- Edicao, Revisao e Destaques Visuais-->
+ <mark>Texto destacado</mark>          <!-- Destaca o texto com um fundo amarelo (efeito de caneta marca-texto) -->
+<del>Texto deletado</del>             <!-- Mostra um texto riscado ao meio para indicar que foi removido ou corrigido -->
+<ins>Texto inserido</ins>             <!-- Mostra um texto sublinhado para indicar que foi adicionado ao documento -->
+<s>Texto incorreto</s>                <!-- Risca o texto para mostrar algo que nao e mais relevante ou correto -->
+<small>Texto menor</small>            <!-- Deixa a letra menor (usado para termos de uso, notas de rodape ou avisos legais) -->
+
+
+<!--Recursos Linguisticos e Suporte Internacional-->
+<ruby>                                <!-- Usado para mostrar anotacoes de pronuncia sobre caracteres orientais -->
+    漢 <rt>Kanji</rt>                 <!-- "rt" define o texto guia pequeno que fica em cima do caractere -->
+</ruby>                               <!-- Fechamento da estrutura de anotacao ruby -->
+<bdi>Texto Isolado</bdi>              <!-- Isola um texto que pode estar em um idioma com leitura da direita para esquerda -->
+<bdo dir="rtl">Texto invertido</bdo>  <!-- Forca a direcao de leitura do texto (ex: rtl inverte as letras da direita para esquerda) -->
+<wbr>                                 <!-- Indica um lugar opcional onde o navegador pode quebrar a linha se faltar espaco -->
+
+
+<!--Acessibilidade e Semantica para Imagens Complexas-->
+<figure>                              <!-- Agrupa um conteudo ilustrativo (imagem, grafico ou codigo) e sua legenda -->
+    <img src="grafico.png" alt="">    <!-- A imagem ou ilustracao em si -->
+    <figcaption>Legenda da foto</figcaption> <!-- Define a legenda explicativa para o conteudo do elemento figure acima -->
+</figure>                             <!-- Fechamento do grupo ilustrativo -->
+
+
+<!--Renderizacao de Formulas Matematicas (MathML)-->
+<math>                                <!-- Tag raiz para escrever formulas matematicas complexas legiveis por leitores de tela -->
+    <mfrac>                           <!-- Cria uma fracao matematica nativa no navegador -->
+        <mi>x</mi>                    <!-- Define um identificador/variavel matematica (neste caso, "x") -->
+        <mn>2</mn>                    <!-- Define um numero literal na expressao matematica (neste caso, "2") -->
+    </mfrac>                          <!-- Fechamento da estrutura de fracao -->
+</math>                               <!-- Fechamento da estrutura matematica -->
+
+
+
+<!--Definicoes e Glossarios (Listas de Descricao)-->
+<dl>                                  <!-- Cria uma lista de descricao (excelente para glossarios, dicionarios ou metadados) -->
+    <dt>HTML</dt>                     <!-- Define o termo ou palavra a ser explicada (Description Term) -->
+    <dd>Linguagem de marcacao.</dd>   <!-- Define a explicacao ou descricao do termo acima (Description Details) -->
+</dl>                                 <!-- Fechamento da lista de descricao -->
+
+
+
+<!--Elementos de Componentes Nativos e Web Components-->
+<template>                            <!-- Guarda um pedaco de codigo HTML oculto que so sera clonado e exibido via JavaScript -->
+    <div class="cartao-dinamico"></div><!-- Conteudo inativo dentro do template -->
+</template>                           <!-- Fechamento do conteiner de template -->
+
+<slot name="meu-texto">Texto</slot>  <!-- Cria um espaco reservado dentro de um Shadow DOM para ser preenchido dinamicamente -->
+
+
+
+<!--Conteudos Externos Legados ou Especiais-->
+<object data="arquivo.pdf" type=""></object> <!-- Incorpora conteudos externos variados (como arquivos PDF, Flash ou plugins) -->
+<embed src="jogo.swf" type="">        <!-- Insere um conteiner rigido para ferramentas externas ou midias interativas antigas -->
+<param name="autoplay" value="true">  <!-- Define parametros de configuracao para as tags object ou embed acima -->
+
+
+
+
+
+
+
+
