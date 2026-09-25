@@ -1,0 +1,178 @@
+/* Fontes e Textos*/
+.texto-exemplo {
+    color: #333333;             /* Define a cor do texto */
+    font-family: 'Arial';       /* Define a família da fonte (tipo de letra) */
+    font-size: 16px;            /* Define o tamanho da fonte */
+    font-weight: bold;          /* Define a espessura da fonte (negrito, light, etc.) */
+    font-style: italic;         /* Aplica o estilo itálico ao texto */
+    text-align: center;         /* Alinha o texto (center, left, right, justify) */
+    text-decoration: underline; /* Adiciona decoração ao texto (sublinhado, riscado) */
+    text-transform: uppercase;  /* Transforma o texto em letras maiúsculas */
+    letter-spacing: 2px;        /* Controla o espaçamento entre as letras */
+    line-height: 1.5;           /* Controla o espaçamento entre as linhas de texto */
+    word-spacing: 4px;          /* Controla o espaçamento entre as palavras */
+}
+
+
+/*Box Model (Cores, Espaços e Bordas)*/
+.caixa-exemplo {
+    width: 300px;               /* Define a largura do elemento */
+    height: 200px;              /* Define a altura do elemento */
+    max-width: 100%;            /* Define a largura máxima que o elemento pode ter */
+    min-height: 50px;           /* Define a altura mínima que o elemento deve ter */
+    background-color: #f0f0f0;  /* Define a cor de fundo do elemento */
+    background-image: url();    /* Define uma imagem de fundo */
+    background-size: cover;     /* Ajusta o tamanho da imagem de fundo para cobrir tudo */
+    padding: 20px;              /* Espaçamento interno (afasta o conteúdo da borda) */
+    margin: 15px;               /* Espaçamento externo (afasta esta caixa de outras) */
+    border: 2px solid #000;     /* Cria uma borda (espessura, estilo e cor) */
+    border-radius: 8px;         /* Arredonda os cantos da estrutura */
+    box-shadow: 2px 2px 5px rgb;/* Adiciona uma sombra ao redor da caixa */
+    opacity: 0.8;               /* Define a opacidade/transparência (de 0 a 1) */
+}
+
+/* Layout e Exibição (Display e Alinhamentos)*/
+.layout-exemplo {
+    display: flex;              /* Ativa o modo Flexbox para alinhar itens filhos */
+    flex-direction: column;     /* Define a direção dos itens flex (row ou column) */
+    justify-content: center;    /* Alinha os itens filhos horizontalmente (no flex) */
+    align-items: center;        /* Alinha os itens filhos verticalmente (no flex) */
+    gap: 10px;                  /* Cria um espaço padrão entre os itens filhos */
+    display: grid;              /* Ativa o modo Grid para layouts em malha */
+    grid-template-columns: 1fr; /* Define a quantidade e o tamanho das colunas do Grid */
+    visibility: hidden;         /* Esconde o elemento, mas mantém o seu espaço na tela */
+    display: none;              /* Esconde o elemento por completo e remove seu espaço */
+    overflow: scroll;           /* Controla o que acontece se o conteúdo transbordar */
+}
+
+
+
+/*Posicionamento Fixo e Absoluto*/
+.posicao-exemplo {
+    position: relative;         /* Define posição relativa (base para filhos absolutos) */
+    position: absolute;         /* Posiciona o elemento estritamente ligado ao pai */
+    position: fixed;            /* Fixa o elemento na tela do navegador (não corre no scroll) */
+    top: 0;                     /* Alinha o elemento no topo do espaço delimitado */
+    bottom: 10px;               /* Alinha o elemento na parte inferior */
+    left: 0;                    /* Alinha o elemento no canto esquerdo */
+    right: 5px;                 /* Alinha o elemento no canto direito */
+    z-index: 10;                /* Define a ordem de empilhamento (quem fica por cima) */
+}
+
+
+
+/*Efeitos, Cliques e Animações*/
+.efeito-exemplo {
+    cursor: pointer;            /* Transforma o ponteiro do mouse na "mãozinha" de clique */
+    transition: 0.3s ease;      /* Suaviza a mudança de qualquer estilo (efeito transição) */
+    transform: scale(1.1);      /* Altera a escala, rotaciona ou move o elemento */
+    user-select: none;          /* Impede que o usuário consiga selecionar o texto */
+    pointer-events: none;       /* Desativa qualquer clique ou interação do mouse no item */
+}
+
+
+/*Fundos Avançados (Backgrounds)*/
+.fundo-avancado {
+    background-repeat: no-repeat;   /* Impede que a imagem de fundo fique se repetindo */
+    background-position: center;    /* Centraliza a imagem de fundo no elemento */
+    background-attachment: fixed;   /* Fixa o fundo na tela criando um efeito parallax */
+    background-blend-mode: multiply;/* Mistura a imagem de fundo com a cor de fundo */
+    background: linear-gradient();  /* Cria um fundo com degradê de cores */
+}
+
+
+
+/*Corte e Filtros Visuais*/
+.filtro-corte {
+    filter: blur(5px);              /* Aplica um efeito de desfoque borrado */
+    filter: grayscale(100%);        /* Deixa o elemento totalmente em preto e branco */
+    filter: drop-shadow(2px 2px);   /* Aplica sombra projetada perfeita para imagens PNG */
+    clip-path: circle(50%);         /* Recorta o elemento em formatos geométricos (círculo) */
+    object-fit: cover;              /* Ajusta fotos/vídeos sem distorcer as proporções */
+    object-position: top center;    /* Define qual parte da foto deve ser priorizada no corte */
+}
+
+
+/*Manipulação de Textos Longos e Listas*/
+.texto-lista {
+    white-space: nowrap;            /* Impede que o texto quebre e vá para a linha de baixo */
+    text-overflow: ellipsis;        /* Adiciona "..." no final do texto se ele transbordar */
+    text-shadow: 1px 1px 2px #000;  /* Cria uma sombra projetada nas letras do texto */
+    list-style-type: none;          /* Remove as bolinhas/números de listas (ul ou ol) */
+    list-style-position: inside;    /* Coloca os marcadores da lista do lado de dentro do bloco */
+}
+
+
+
+/*Configurações Avançadas do Box Model*/
+.box-avancado {
+    box-sizing: border-box;         /* Inclui padding e border no cálculo do tamanho total */
+    outline: 2px solid blue;        /* Cria uma linha externa que não ocupa espaço no layout */
+    outline-offset: 4px;            /* Define o espaçamento entre a borda e o outline */
+    aspect-ratio: 16 / 9;           /* Força o elemento a manter uma proporção de tela */
+    resize: both;                   /* Permite que o usuário redimensione o item puxando o canto */
+}
+
+
+
+/* Comandos de Flexbox e Grid (Avançados)*/
+.flex-grid-avancado {
+    flex-wrap: wrap;                /* Permite que os itens quebrem de linha se faltar espaço */
+    flex-grow: 1;                   /* Diz ao item para esticar e preencher o espaço vazio */
+    flex-shrink: 0;                 /* Impede que o item se esmague caso falte espaço */
+    order: -1;                      /* Altera a ordem visual de exibição de um item na tela */
+    grid-column: span 2;            /* Faz o elemento ocupar duas colunas dentro de um Grid */
+}
+
+
+
+/* Criação de Animações (Keyframes)*/
+.animacao-avancada {
+    animation-name: flutuar;         /* Vincula o elemento a uma regra de @keyframes */
+    animation-duration: 2s;          /* Define quanto tempo a animação inteira demora */
+    animation-iteration-count: infinite;/* Define quantas vezes roda (infinite roda para sempre) */
+    animation-timing-function: linear;/* Define o ritmo da animação (constante, acelerado, etc.) */
+    animation-delay: 0.5s;           /* Define um tempo de espera antes da animação começar */
+    animation-direction: alternate;  /* Faz a animação ir para frente e depois voltar de ré */
+    animation-play-state: paused;    /* Permite pausar a animação (útil para eventos com mouse) */
+}
+
+
+/* Efeitos de Vidro e Interface Moderna*/
+.interface-moderna {
+    backdrop-filter: blur(10px);     /* Desfoca o que está *atrás* do elemento (efeito vidro) */
+    scroll-behavior: smooth;         /* Faz o clique em links de ancoragem rolar a página suavemente */
+    accent-color: #007bff;          /* Altera a cor padrão de checkboxes, radios e inputs range */
+    caret-color: red;                /* Altera a cor daquela barrinha que pisca quando digitamos */
+    mix-blend-mode: overlay;         /* Mistura visualmente o elemento com o que estiver atrás dele */
+}
+
+
+/*Quebra de Texto Avançada e Idiomas*/
+.texto-avancado {
+    word-break: break-all;           /* Força a quebra de palavras gigantescas para não quebrar o layout */
+    hyphens: auto;                   /* Adiciona hífens (-) automaticamente ao quebrar palavras no fim da linha */
+    writing-mode: vertical-rl;       /* Altera a direção da escrita (ex: texto em pé da direita para esquerda) */
+    text-orientation: upright;       /* Mantém as letras em pé quando o texto está em modo vertical */
+}
+
+
+
+/*Estilização para Impressão (Print)*/
+.config-impressao {
+    page-break-before: always;       /* Força a impressora a começar uma nova página antes deste elemento */
+    page-break-inside: avoid;        /* Impede que um elemento (como uma tabela) seja cortado ao meio entre páginas */
+    break-inside: avoid;             /* Versão moderna para evitar cortes em colunas ou páginas */
+}
+
+
+
+/*struturas Globais e Funções Especiais*/
+:root {
+    --cor-principal: #3498db;        /* Cria uma variável CSS para ser reutilizada no código */
+}
+.uso-variavel {
+    color: var(--cor-principal);     /* Aplica o valor salvo na variável criada acima */
+    width: calc(100% - 40px);        /* Faz cálculos matemáticos misturando unidades (ex: % e px) */
+    color: clamp(1rem, 2vw, 3rem);   /* Define tamanho dinâmico (mínimo, ideal baseado na tela, máximo) */
+}
